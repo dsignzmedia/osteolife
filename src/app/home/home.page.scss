@@ -1,0 +1,27 @@
+ion-header{
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  padding: 10px 0;
+  img{
+    width: 180px;
+    height: auto;
+  }
+}
+ion-content{
+  ion-grid{
+    img{
+      width: 300px;
+      height: auto;
+    }
+    ion-label{
+      display: flex;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #392a25;
+      text-align: center;
+    }
+  }
+}
