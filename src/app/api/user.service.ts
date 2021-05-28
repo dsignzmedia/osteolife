@@ -19,4 +19,8 @@ export class UserService {
     console.log(this.apiallcategory+"?fetchcategory");
     return this.http.get(this.apiallcategory+"?fetchcategory").toPromise();
   }
+  fetchProducts(name){
+    console.log(this.baseUrl_ostio+"?category_product="+name);
+    return this.http.get(this.baseUrl_ostio+"?category_product="+name).toPromise();
+  }
 }
