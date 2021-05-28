@@ -5,8 +5,21 @@
 </ion-header>
 
 <ion-content>
-  <div (click)="close()">close</div>
-  <div *ngFor="let list of products;">
-    <div>{{list.product_name}}</div>
+  <ion-row>
+    <ion-col size="11" class="product_catname">Products
+    </ion-col>
+    <ion-col size="1" (click)="close()" class="product_close">X
+    </ion-col>
+  </ion-row>
+  <hr class="products-line">
+  <div class="products">
+  <div *ngFor="let list of products;" class="cat_products">
+    <ion-row>
+      <ion-col size="12">
+        <img src="assets/imgs/product/{{list.product_image}}" alt="{{list.product_name}}" width="100%" height="auto">
+      </ion-col>
+    </ion-row>
+    <div class="product_name">{{list.product_name}}</div>
   </div>
+</div>
 </ion-content>
