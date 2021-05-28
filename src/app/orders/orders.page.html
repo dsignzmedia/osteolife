@@ -1,0 +1,9 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<p style="color: red;" *ngFor="let order of orders">{{order.order_id}}-{{order.product_name}}</p>
+</ion-content>

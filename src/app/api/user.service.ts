@@ -23,4 +23,12 @@ export class UserService {
     console.log(this.baseUrl_ostio+"?category_product="+name);
     return this.http.get(this.baseUrl_ostio+"?category_product="+name).toPromise();
   }
+  allProducts(){
+    console.log(this.baseUrl_ostio+"?allproducts=");
+    return this.http.get(this.baseUrl_ostio+"?allproducts=").toPromise();
+  }
+  orders(){
+    console.log(this.baseUrl_ostio+"?orders=");
+    return this.http.get(this.baseUrl_ostio+"?orders=").toPromise();
+  }
 }

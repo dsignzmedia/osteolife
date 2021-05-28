@@ -1,20 +1,41 @@
 <ion-content>
     <ion-grid class="top-content">
-      <ion-row>
-        <ion-col size="6">
+      <ion-row class="master-product">
+        <ion-col class size="6">
+          <div class="item">
+          <figure>
           <img src="assets/imgs/product/bone-regeneration.jpg" alt="bone-regeneration" width="100%" height="auto">
+          </figure>
+          <figcaption>Bone Regeneration</figcaption>
+
+          </div>
         </ion-col>
         <ion-col size="6">
-          <img src="assets/imgs/product/resorbable-membranes.jpg" alt="resorbable-membranes" width="100%" height="auto">
+          <div class="item">
+          <figure><img src="assets/imgs/product/resorbable-membranes.jpg" alt="resorbable-membranes" width="100%" height="auto"></figure>
+          <figcaption>Resorbable Membranes</figcaption>
+          </div>
         </ion-col>
         <ion-col size="6">
-          <img src="assets/imgs/product/sutures.jpg" alt="sutures" width="100%" height="auto">
+          <div class="item">
+          <figure><img src="assets/imgs/product/sutures.jpg" alt="sutures" width="100%" height="auto"></figure>
+          <figcaption>Sutures</figcaption>
+          </div>
         </ion-col>
         <ion-col size="6">
-          <img src="assets/imgs/product/instruments.jpg" alt="instruments" width="100%" height="auto">
+          <div class="item">
+          <figure><img src="assets/imgs/product/instruments.jpg" alt="instruments" width="100%" height="auto"></figure>
+          <figcaption>Instruments</figcaption>
+        </div>
+        </ion-col>
+        <ion-col size="6" *ngFor="let cat of category;">
+          <div class="item">
+            <figure><img src="assets/imgs/product/instruments.jpg" alt="instruments" width="100%" height="auto"></figure>
+            <figcaption (click)="viewProduct(cat.category)">{{cat.category}}</figcaption>
+          </div>
         </ion-col>
       </ion-row>
-      <ion-row>
+      <!-- <ion-row>
         <ion-col class="master-trap-title">
           <h1>Our Products</h1>
           <h2>VIEW CATEGORIES</h2>
@@ -22,9 +43,9 @@
             <img src="assets/imgs/product/tooth-icon.png" >
         </i>
         </ion-col>
-      </ion-row>
-      <div *ngFor="let cat of category;" class="category">
+      </ion-row> -->
+      <!-- <div *ngFor="let cat of category;" class="category">
         <div (click)="viewProduct(cat.category)">{{cat.category}}</div>
-      </div>
+      </div> -->
     </ion-grid>
 </ion-content>

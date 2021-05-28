@@ -28,6 +28,14 @@ const routes: Routes = [
         loadChildren: () => import('../product/product.module').then(m => m.ProductPageModule)
       },
       {
+        path: 'orders',
+        loadChildren: () => import('../orders/orders.module').then(m => m.OrdersPageModule)
+      },
+      {
+        path: 'all-product',
+        loadChildren: () => import('../all-products/all-products.module').then(m => m.AllProductsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
