@@ -1,1 +1,68 @@
+ion-label{
+	color: #000;
+	font-size: 12px;
+}
 
+.tabs-item{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	i{
+		width: 23px;
+		height: 23px;
+		margin-bottom: 3px;
+		background:{
+			size: 23px;
+			position: center;
+			repeat: no-repeat;
+		}
+		&.home{
+			background-image: url(/assets/home.svg);
+		}
+		&.products{
+			background-image: url(/assets/products.svg);
+		}
+		&.orders{
+			background-image: url(/assets/shopping-bag.svg);
+		}
+		&.profile{
+			background-image: url(/assets/user.svg);
+		}
+	}
+	img{
+		width: auto;
+		height: 23px;
+		margin-bottom: 3px;
+		display: none;
+	}
+}
+
+ion-tab-button{
+	&.tab-selected{
+		ion-label{
+			color: #ee1c23;
+			font-weight: 600;
+		}
+		.tabs-item{
+			i{
+		&.home{
+			background-image: url(/assets/home-hover.svg);
+		}
+		&.products{
+			background-image: url(/assets/products-hover.svg);
+		}
+		&.orders{
+			background-image: url(/assets/shopping-bag-hover.svg);
+		}
+		&.profile{
+			background-image: url(/assets/user-hover.svg);
+		}
+			}
+		}
+	}
+}
+
+  ion-tab-bar {
+        border: 0;
+         box-shadow: 0 5px 20px rgba(0, 0,  0, 0.1);
+      }

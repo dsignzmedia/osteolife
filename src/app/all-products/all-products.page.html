@@ -1,0 +1,12 @@
+<ion-content>
+  <ion-grid class="top-content">
+    <ion-row class="master-product">
+      <ion-col size="6" *ngFor="let product of allproducts;">
+        <div class="item">
+          <figure><img src="assets/imgs/product/instruments.jpg" alt="instruments" width="100%" height="auto"></figure>
+          <figcaption>{{product.product_name}}</figcaption>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

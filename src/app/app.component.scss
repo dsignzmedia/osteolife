@@ -1,12 +1,12 @@
 ion-header{
   background-color: #000000;
-  padding: 10px 0;
+  padding: 10px;
   .mainlogo{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     img{
-      width: 180px;
+      width: 150px;
       height: auto;
     }
   }
@@ -15,7 +15,40 @@ ion-menu{
   ion-header{background-color:#fff;}
 }
 ion-content{
+  background-color: #fbfbff;
   .top-content{
     margin-top: 40px;
+  }
+}
+.header{
+  display: flex;
+  align-items: center;
+}
+.addCart{
+  display: flex;
+  align-items: center;
+  float: right;
+  position: relative;
+  img{
+    margin-right: 5px;
+  }
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  .no{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-size: 10px;
+    position: absolute;
+    right: -1px;
+    top: -4px;
+
   }
 }
