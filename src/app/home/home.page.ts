@@ -11,11 +11,12 @@ export class HomePage implements OnInit {
   public category : any;
   public products : any;
   constructor(public service: UserService,public  modalCtrl: ModalController) { }
+
   async viewProduct(name){
      const modal = this.modalCtrl.create({
       component: ProductPage,
       componentProps: {
-        'productlist': name
+        'categoryname': name
       }
     });
     return (await modal).present();
