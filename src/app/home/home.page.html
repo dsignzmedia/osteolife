@@ -24,7 +24,7 @@
         </ion-col>
       </ion-row>
       <div *ngFor="let cat of category;" class="category">
-        <div>{{cat.category}}</div>
+        <div (click)="viewProduct(cat.category)">{{cat.category}}</div>
       </div>
     </ion-grid>
 </ion-content>
