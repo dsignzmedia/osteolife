@@ -1,14 +1,10 @@
-ion-header{
-  display: flex;
-  justify-content: center;
-  background-color: #000000;
-  padding: 10px 0;
-  img{
-    width: 180px;
-    height: auto;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 ion-content{
+  .top-content{
+    margin-top: 80px;
+    font-family: 'Lato' , sans-serif;
+  }
   ion-grid{
     img{
       width: 300px;
@@ -22,6 +18,63 @@ ion-content{
       text-transform: uppercase;
       color: #392a25;
       text-align: center;
+    }
+    .master-trap-title{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .master-trap-title img{
+      width: 26px;
+    }
+    .master-title-wrap .icon-divider{
+      position : relative;
+    }
+    .master-title-wrap .icon-divider:before {
+      left: 50px;
+  }
+    .master-title-wrap .icon-divider:after, .master-title-wrap .icon-divider:before {
+      content: "";
+      position: absolute;
+      // width: 1px;
+      height: 1px;
+      display: inline-block;
+      background-color: #5e5a54;
+      width: 140px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    h1{
+      color: #EF1B23;
+      font-family: 'Great Vibes', cursive;
+      font-weight: 400;
+      line-height: 1.2;
+      font-size: 35px;
+      letter-spacing: 0em;
+    }
+    h2{
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 25px;
+      letter-spacing: .1em;
+      color: #392a25;
+      line-height: 1.6;
+      margin-top: -10px;
+    }
+    .cat_btn{
+      justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+    }
+    .category{
+      margin: 18px 15px;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px 0;
+      border: 1px solid #EF1B23;
     }
   }
 }

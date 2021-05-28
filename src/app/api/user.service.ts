@@ -12,12 +12,11 @@ export class UserService {
   public baseUrl : string = "https://toptechrealty.com/api/auth";
   public apiproperty: string = this.baseUrl+"/rmls/listing";
   public apimapproperty: string = this.baseUrl+"/rmls/listing/map-infowindow";
-  public apitest:  string = this.baseUrl_ostio;
+  public apiallcategory:  string = this.baseUrl_ostio;
   constructor(public http: HttpClient) {
   }
-  testapi(test){
-    console.log(this.apitest+"?fetchcategory="+test);
-    console.log(test);
-    return this.http.get(this.apitest+"?fetchcategory="+test).toPromise();
+  allcategory(){
+    console.log(this.apiallcategory+"?fetchcategory");
+    return this.http.get(this.apiallcategory+"?fetchcategory").toPromise();
   }
 }
