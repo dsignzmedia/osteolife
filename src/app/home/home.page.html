@@ -14,5 +14,17 @@
           <img src="assets/imgs/product/instruments.jpg" alt="instruments" width="100%" height="auto">
         </ion-col>
       </ion-row>
+      <ion-row>
+        <ion-col class="master-trap-title">
+          <h1>Our Products</h1>
+          <h2>VIEW CATEGORIES</h2>
+          <i class="icon-divider">
+            <img src="assets/imgs/product/tooth-icon.png" >
+        </i>
+        </ion-col>
+      </ion-row>
+      <div *ngFor="let cat of category;" class="category">
+        <div>{{cat.category}}</div>
+      </div>
     </ion-grid>
 </ion-content>

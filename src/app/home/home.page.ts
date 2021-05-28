@@ -6,13 +6,14 @@ import { UserService } from '../api/user.service';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-
+  public category : any;
   constructor(public service: UserService) { }
 
   ngOnInit() {
-     this.service.testapi('test').then( (response : any) => {
-      console.log("test api");
+     this.service.allcategory().then( (response : any) => {
+      console.log("allcategory");
       console.log(response);
+      this.category = response;
        }).catch( error => {
      })
   }
