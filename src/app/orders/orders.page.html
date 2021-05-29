@@ -1,9 +1,15 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>orders</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-<p style="color: red;" *ngFor="let order of orders">{{order.order_id}}-{{order.product_name}}</p>
+<ion-grid class="top-content">
+<div class="item" *ngFor="let order of orders">
+	<div class="top">
+		<p class="order">Order: <span>{{order.order_id}}</span></p>
+		<small class="status pending">{{order.order_status}}</small>
+	</div>
+	<div class="bottom">
+		<strong class="price">$100</strong>
+		<label class="date">{{order.created_at}}</label>
+		<img class="right-arrow" src="assets/right-arrow.svg" alt="right arrow" width="15" height="15">
+	</div>
+</div>
+</ion-grid>
 </ion-content>

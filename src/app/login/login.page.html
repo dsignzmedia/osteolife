@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content class="loginPage">
+<div class="wave-container">
+ <img src="assets/imgs/osteolife.png" width="200"  alt="mainlogo">
+</div>
+<form  #form="ngForm" (ngSubmit)="login(form)">
+<ion-grid>
+	<ion-row>
+		<ion-col size="12">
+			<div class="signIn">
+			<h3 class="title">Login</h3>
+			<div class="login-item">
+				<ion-icon src="/assets/user.svg"></ion-icon>
+				<ion-input type="text" name="user_name" placeholder="Username" ngModel required></ion-input>
+			</div>
+			<div class="login-item">
+				<ion-icon src="/assets/password.svg"></ion-icon>
+				<ion-input type="password" name="password" placeholder="Password" ngModel required></ion-input>
+			</div>
+			<div class="login-item fPwd">
+				<ion-label>Forgot Password</ion-label>
+			</div>
+			<div class="login-item">
+				<ion-button type="ngSubmit" class="signinBtn">Sign In</ion-button>
+			</div>
+			<div class="login-item register">
+				<p>Dont have an account? <span>Register</span></p>
+			</div>
+			</div>
+		</ion-col>
+	</ion-row>
+</ion-grid>
+</form>
 </ion-content>
