@@ -1,5 +1,5 @@
 <ion-app>
-  <ion-menu side="start" menuId="primary" contentId="main">
+<ion-menu side="start" menuId="primary" contentId="main">
     <ion-header>
       <ion-toolbar>
         <ion-title>Menu</ion-title>
@@ -14,11 +14,11 @@
       </ion-list>
     </ion-content>
   </ion-menu>
-  <ion-header>
+  <ion-header *ngIf="header == 1">
     <ion-row class="header">
-      <!-- <ion-col size="2">
+     <ion-col size="2" style="display: none">
         <img src="assets/imgs/menu.svg" alt="menu" (click)= "openmenu()"  width="50" height="40" />
-      </ion-col> -->
+      </ion-col>
       <ion-col size="9" class="mainlogo">
         <img src="assets/imgs/osteolife.png"  alt="mainlogo">
       </ion-col>
@@ -26,9 +26,9 @@
           <span class="addCart"><img src="assets/imgs/cart.svg" width="32" height="32" alt="mainlogo"><i class="no">10</i></span>
       </ion-col>
     </ion-row>
-    <!-- <ion-toolbar>
+   <ion-toolbar style="display: none">
       <ion-title>home</ion-title>
-    </ion-toolbar> -->
+    </ion-toolbar>
   </ion-header>
   <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

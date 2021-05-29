@@ -31,4 +31,8 @@ export class UserService {
     console.log(this.baseUrl_ostio+"?orders=");
     return this.http.get(this.baseUrl_ostio+"?orders=").toPromise();
   }
+  dologin(val){
+    console.log(this.baseUrl_ostio+"?u_name="+val.user_name+"&pwd="+val.password);
+    return this.http.get(this.baseUrl_ostio+"?u_name="+val.user_name+"&pwd="+val.password).toPromise();
+  }
 }
