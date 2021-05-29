@@ -1,10 +1,22 @@
 <ion-content>
   <ion-grid class="top-content">
     <ion-row class="master-product">
-      <ion-col size="6" *ngFor="let product of allproducts;">
+      <ion-col size="12" *ngFor="let product of allproducts;">
         <div class="item">
           <figure><img src="assets/imgs/product/instruments.jpg" alt="instruments" width="100%" height="auto"></figure>
-          <figcaption>{{product.product_name}}</figcaption>
+          <figcaption>
+            <div class="inner">
+          <p>{{product.product_name}}</p>
+          <ul class="icons">
+            <li class="addCart">
+              <img src="assets/shopping-bag-color.svg" alt="Add to cart" width="35" height="35">
+            </li>
+            <li class="viewIcon">
+              <img src="assets/right-arrow.svg" alt="right arrow" width="20" height="20">
+            </li>
+          </ul>
+        </div>
+          </figcaption>
         </div>
       </ion-col>
     </ion-row>
