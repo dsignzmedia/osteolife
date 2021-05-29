@@ -21,6 +21,14 @@ const routes: Routes = [
   {
     path: 'tabs/all-products',
     loadChildren: () => import('./all-products/all-products.module').then( m => m.AllProductsPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   }
 ];
 
